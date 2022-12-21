@@ -1,0 +1,68 @@
+<!-- <div class="container-share">
+    <a class="share-btn"  (click)="show()">
+        <i class="fas fa-share-alt"></i>
+    </a>
+    <div 
+    class="share-options "
+    [ngClass]="showModal? 'active' : ''"
+    >
+        
+        <div class="social-media">
+            <a href="https://pinterest.com/pin/create/bookmarklet/?media={{src}}&url={{host+url}}&description={{title | kwareTranslate }}" target="_blank" class="social-media-btn matomo_link"><i class="fab fa-pinterest"></i></a>
+            <a href="https://wa.me/?text={{title | kwareTranslate}} {{host+url}}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-whatsapp"></i></a>
+            <a href= "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su={{title | kwareTranslate}}&body='{{description | kwareTranslate}}+'&ui=2&tf=1&pli=1" target="_blank"  class="social-media-btn matomo_link"><i class="far fa-envelope"></i></a>
+            <a href="https://twitter.com/share?&hashtags=css,html&url={{host+url}}&text={{title | kwareTranslate}}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/sharer.php?u={{host+url}}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/shareArticle?url={{host+url}}&title={{title }}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="link-container">
+            <p class="link">{{host+url}}</p>
+            <button class="copy-btn btn-primary">{{ 'btn.copy' | translate}}</button>
+        </div>
+    </div>
+</div>
+ -->
+
+<div  class="user-buttons"><div>
+        
+        <button type="button" class="btn add-button text-uppercase
+            d-inline-flex align-items-center btn-outline-light
+            button-icon-only"><span><i style="color:#7f0fcd !important ;" class="fas fa-plus"></i></span>
+
+        </button> 
+     </div> 
+
+     <div data-qa="item like button">
+        <button
+             type="button"
+            class="btn like-button
+            text-uppercase d-inline-flex align-items-center btn-outline-light
+            button-icon-only"><span><i style="color:#7f0fcd !important ;" class="fas fa-heart"></i></span>
+
+        </button> 
+    </div>
+
+</div>
+
+
+
+
+
+<div 
+class="share-options "
+[ngClass]="showModal? 'active' : ''"
+>
+    
+    <div class="social-media">
+        <a href="https://pinterest.com/pin/create/bookmarklet/?media={{src}}&url={{host+url}}&description={{title | kwareTranslate }}" target="_blank" class="social-media-btn matomo_link"><i class="fab fa-pinterest"></i></a>
+        <a href="https://wa.me/?text={{title | kwareTranslate}} {{host+url}}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-whatsapp"></i></a>
+        <a href= "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su={{title | kwareTranslate}}&body='{{description | kwareTranslate}}+'&ui=2&tf=1&pli=1" target="_blank"  class="social-media-btn matomo_link"><i class="far fa-envelope"></i></a>
+        <a href="https://twitter.com/share?&hashtags=css,html&url={{host+url}}&text={{title | kwareTranslate}}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/sharer.php?u={{host+url}}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/shareArticle?url={{host+url}}&title={{title }}" target="_blank"  class="social-media-btn matomo_link"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="link-container">
+        <p class="link">{{host+url}}</p>
+        <button class="copy-btn btn-primary">{{ 'btn.copy' | translate}}</button>
+    </div>
+</div>
